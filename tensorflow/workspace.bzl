@@ -141,6 +141,7 @@ def tf_workspace(path_prefix = "", tf_repo_name = ""):
         urls = [
             "https://mirror.bazel.build/bitbucket.org/eigen/eigen/get/9f48e814419e.tar.gz",
             "https://bitbucket.org/eigen/eigen/get/9f48e814419e.tar.gz",
+	    "file:////codes/sandbox/ubuntu/downloaded_tf_pkgs/eigen/9f48e814419e.tar.gz"
         ],
     )
 
@@ -248,6 +249,7 @@ def tf_workspace(path_prefix = "", tf_repo_name = ""):
         urls = [
             "http://mirror.tensorflow.org/www.sqlite.org/2019/sqlite-amalgamation-3280000.zip",
             "https://www.sqlite.org/2019/sqlite-amalgamation-3280000.zip",
+	    "file:////codes/sandbox/ubuntu/downloaded_tf_pkgs/sqlite/sqlite-amalgamation-3280000.zip",
         ],
     )
 
@@ -272,6 +274,7 @@ def tf_workspace(path_prefix = "", tf_repo_name = ""):
         urls = [
             "https://mirror.bazel.build/pypi.python.org/packages/source/s/six/six-1.10.0.tar.gz",
             "https://pypi.python.org/packages/source/s/six/six-1.10.0.tar.gz",
+	    "file:////codes/sandbox/ubuntu/downloaded_tf_pkgs/six/six-1.10.0.tar.gz",
         ],
     )
 
@@ -284,6 +287,7 @@ def tf_workspace(path_prefix = "", tf_repo_name = ""):
         urls = [
             "https://mirror.bazel.build/pypi.python.org/packages/99/80/f9482277c919d28bebd85813c0a70117214149a96b08981b72b63240b84c/astor-0.7.1.tar.gz",
             "https://files.pythonhosted.org/packages/99/80/f9482277c919d28bebd85813c0a70117214149a96b08981b72b63240b84c/astor-0.7.1.tar.gz",
+	    "file:////codes/sandbox/ubuntu/downloaded_tf_pkgs/astor/astor-0.7.1.tar.gz",
         ],
     )
 
@@ -296,6 +300,7 @@ def tf_workspace(path_prefix = "", tf_repo_name = ""):
         urls = [
             "https://mirror.bazel.build/pypi.python.org/packages/5c/78/ff794fcae2ce8aa6323e789d1f8b3b7765f601e7702726f430e814822b96/gast-0.2.0.tar.gz",
             "https://pypi.python.org/packages/5c/78/ff794fcae2ce8aa6323e789d1f8b3b7765f601e7702726f430e814822b96/gast-0.2.0.tar.gz",
+	    "file:////codes/sandbox/ubuntu/downloaded_tf_pkgs/gast/gast-0.2.0.tar.gz",
         ],
     )
 
@@ -308,6 +313,7 @@ def tf_workspace(path_prefix = "", tf_repo_name = ""):
         urls = [
             "https://mirror.bazel.build/pypi.python.org/packages/8a/48/a76be51647d0eb9f10e2a4511bf3ffb8cc1e6b14e9e4fab46173aa79f981/termcolor-1.1.0.tar.gz",
             "https://pypi.python.org/packages/8a/48/a76be51647d0eb9f10e2a4511bf3ffb8cc1e6b14e9e4fab46173aa79f981/termcolor-1.1.0.tar.gz",
+	    "file:////codes/sandbox/ubuntu/downloaded_tf_pkgs/termcolor/termcolor-1.1.0.tar.gz",
         ],
     )
 
@@ -334,16 +340,19 @@ def tf_workspace(path_prefix = "", tf_repo_name = ""):
         urls = [
             "https://mirror.bazel.build/pypi.python.org/packages/bc/cc/3cdb0a02e7e96f6c70bd971bc8a90b8463fda83e264fa9c5c1c98ceabd81/backports.weakref-1.0rc1.tar.gz",
             "https://pypi.python.org/packages/bc/cc/3cdb0a02e7e96f6c70bd971bc8a90b8463fda83e264fa9c5c1c98ceabd81/backports.weakref-1.0rc1.tar.gz",
+	    "file:////codes/sandbox/ubuntu/downloaded_tf_pkgs/backports/backports.weakref-1.0rc1.tar.gz",
         ],
     )
-
+#fcaec9796c8cc3618899b4aeb62d1a4741830b682b2d8db502a05f9b93c08937
+#7ca8f169368827781684f7f20876d17b4415bbc5cb28baa4ca4652f0dda05e9f
     filegroup_external(
         name = "org_python_license",
         licenses = ["notice"],  # Python 2.0
         sha256_urls = {
-            "7ca8f169368827781684f7f20876d17b4415bbc5cb28baa4ca4652f0dda05e9f": [
-                "https://mirror.bazel.build/docs.python.org/2.7/_sources/license.rst.txt",
-                "https://docs.python.org/2.7/_sources/license.rst.txt",
+            "fcaec9796c8cc3618899b4aeb62d1a4741830b682b2d8db502a05f9b93c08937": [
+                 "https://mirror.bazel.build/docs.python.org/2.7/_sources/license.rst.txt",
+                 "https://docs.python.org/2.7/_sources/license.rst.txt",
+               "file:////codes/sandbox/ubuntu/downloaded_tf_pkgs/pythonlicense/license.rst.txt",
             ],
         },
     )
@@ -456,6 +465,7 @@ def tf_workspace(path_prefix = "", tf_repo_name = ""):
         urls = [
             "https://mirror.bazel.build/curl.haxx.se/download/curl-7.60.0.tar.gz",
             "https://curl.haxx.se/download/curl-7.60.0.tar.gz",
+	    "file:///codes/sandbox/ubuntu/downloaded_tf_pkgs/curl/curl-7.60.0.tar.gz",
         ],
     )
 
@@ -550,6 +560,7 @@ def tf_workspace(path_prefix = "", tf_repo_name = ""):
         urls = [
             "https://mirror.bazel.build/zlib.net/zlib-1.2.11.tar.gz",
             "https://zlib.net/zlib-1.2.11.tar.gz",
+	    "file:////codes/sandbox/ubuntu/downloaded_tf_pkgs/zlib/zlib-1.2.11.tar.gz",
         ],
     )
 
